@@ -4,10 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Calculator</title>
   </head>
-  <body>
-    
+  <body class="bg-cyan-700 box-border">
+    <div class="flex flex-col gap-7 items-center mt-32">
+      <div id="in-out" class="h-[100px] w-[380px]">
+        <input type="text" class="h-full w-full bg-slate-800 rounded-md font-semibold text-white text-3xl">
+      </div>
+      <div id="function" class="h-[460px] w-[380px] rounded-lg bg-slate-800 gap-2 p-4 flex flex-wrap">
+        <button id="ac" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> AC </button>
+        <button id="percentage" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> % </button>
+        <button id="root" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> Root </button>
+        <button id="plus" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> + </button>
+        <button id="one" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> 1 </button>
+        <button id="two" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> 2 </button>
+        <button id="three" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> 3 </button>
+        <button id="minus" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> - </button>
+        <button id="four" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> 4 </button>
+        <button id="five" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> 5 </button>
+        <button id="six" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> 6 </button>
+        <button id="multiply" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> * </button>
+        <button id="seven" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> 7 </button>
+        <button id="eight" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> 8 </button>
+        <button id="nine" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> 9 </button>
+        <button id="division" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> / </button>
+        <button id="zero" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> 0 </button>
+        <button id="dot" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> . </button>
+        <button id="factorial" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> ! </button>
+        <button id="ans" class="m-[3px] h-[70px] w-[75px] bg-slate-600 rounded-3xl hover:bg-slate-500 hover:text-slate-800 text-3xl text-slate-200 shadow-md shadow-slate-300 hover:shadow-sm"> = </button>        
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
